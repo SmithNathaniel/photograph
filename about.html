@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Minimal Responsive Navigation | HTML & CSS</title>
+      
+      <link rel="stylesheet" href="aboutCss.css">
+    
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+   <style>
+     
+.slides {
+    position: relative;
+}
+.slides .slide {
+
+    text-align: center;;
+    font-size: 18px;
+    font-family: 'Yu Gothic Light', sans-serif;
+    position: absolute;
+    top: 0;
+    width: calc(28% - 0.5em);
+    max-height: 2.5em;
+    margin: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+    background: #34495e;
+    color: white;
+    float: left;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out, width 0.25s 0.25s ease-in-out, left 0.25s 0.5s ease-in-out, top 0.25s 0.75s ease-in-out;
+}
+.slides .slide:nth-child(1) {
+    left: 23%;
+    background: rgba(0,0,0,0.85);
+     
+}
+.slides .slide:nth-child(2) {
+    left: 51.3333%;
+    background: rgba(0,0,0,0.6);
+}
+
+.slides .slide > a {
+    display: block;
+    padding-bottom: 1em;
+    font-family: 'Yu Gothic Light', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    color: #fff;
+    transition: color 2s;
+}
+.slides .slide.active {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    max-height: 100em;
+    float: none;
+    transition: top 0.25s 1s ease-in-out, left 0.25s 1.25s ease-in-out, width 0.25s 1.5s ease-in-out, max-height 0.25s 1.75s ease-in-out;
+}
+.slides .slide.active a {
+   
+    font-size: 25px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+html {
+    font-size: 62.5%;
+}
+  
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+     margin-left: 58px;
+     
+}
+ 
+ 
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+              <input type="checkbox" id="nav" class="hidden">
+              <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+              </label>
+              <div class="logo">
+                    <a href="#">Photograph</a>
+              </div>
+              <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="galley.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+              </div>
+        </nav>
+    </div>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br>
+ 
+   <div class="container1">
+  
+ <div class="slides">
+   <div class="slide">
+     <a href="#">About</a>
+     <div class="content">
+          <span>Photograph </span> is a creative collective specializing in Photography and Videography. Our aim is to provide our clients with professional photographs and videos that are not only affordable, but that beautifully capture the eye and imagination. KIP is birthed from a collaborative effort to merge 'Creativity Passion' and 'Professionalism' to create a service that forms a perfect balance of the three.
+
+We create a unique experience by delivering a high end, innovative and professional service on time.<br> <br><span> We do the following photo shoots : </span> 
+        <ul class="services">
+          <li>Family           
+           Shoots</li>
+          <li>  Babies and Children shoots</li>
+          <li> Modelling Shoots</li>
+          <li>Couples or Engagement Shoot</li>
+          <li> Honeymoon or Vacation Photography</li>
+          <li>Parties and Weddings Photography</li>
+        </ul>
+      </div>
+   </div>
+   
+   <div class="slide">
+     <a href="#">Our Team</a>
+     <div class="content">     
+       <div class="wrapper">     
+        <div class="our_team">
+        
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="member_2.png" alt="our_team">
+                 <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>barbara mori</h3>
+              <span>Editor</span>
+              <p>From the beginning shooting and changing littler than common accounts for assignments, she began looking for after endeavors outside of school. As her bit of leeway created, she started to look all starry peered toward at videography. She is a fiery people person's with an ability for music.</p>
+          </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="member_3.png" alt="our_team">
+                 <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>harry dickens</h3>
+              <span>Photographer</span>
+              <p>He is prodded by his enthusiasm to learn and create and is fiery about helping others. During the time he's been exhibited to different people, social orders and different conditions; this has added to creating and refining his inventiveness and vitality in articulations of the human experience.</p>
+          </div>
+            <div class="team_member">
+               <div class="member_img">
+                 <img src="member_4.png" alt="our_team">
+                 <div class="social_media">
+                   <div class="facebook item"><i class="fab fa-facebook-f"></i></div>
+                   <div class="twitter item"><i class="fab fa-twitter"></i></div>
+                   <div class="instagram item"><i class="fab fa-instagram"></i></div>
+                 </div>
+              </div>
+              <h3>sammy louise</h3>
+              <span>Photographer</span>
+              <p>He is prodded by his enthusiasm to learn and create and is fiery about helping others. During the time he's been exhibited to different people, social orders and different conditions; this has added to creating and refining his inventiveness and vitality in articulations of the human experience..</p>
+          </div>  
+        </div>
+    </div>
+    </div>
+   </div>
+   
+  
+ </div>
+</div>
+<script>
+   $('.slide a').click(function () {
+ $('.slide.active').removeClass('active');
+ $(this).closest('.slide').addClass('active');
+ return false;
+});
+   
+</script>
+</body>
+</html>
